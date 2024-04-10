@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x16users/grpc/users.proto\x12 hotel_rooms_users_services.users\x1a\x1bgoogle/protobuf/empty.proto\" \n\x12UserDestroyRequest\x12\n\n\x02id\x18\x01 \x01(\x05\"\x11\n\x0fUserListRequest\"b\n\x10UserListResponse\x12?\n\x07results\x18\x01 \x03(\x0b\x32..hotel_rooms_users_services.users.UserResponse\x12\r\n\x05\x63ount\x18\x02 \x01(\x05\"r\n\x18UserPartialUpdateRequest\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1c\n\x14social_security_card\x18\x03 \x01(\t\x12\x1e\n\x16_partial_update_fields\x18\x04 \x03(\t\"E\n\x0bUserRequest\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1c\n\x14social_security_card\x18\x03 \x01(\t\"F\n\x0cUserResponse\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1c\n\x14social_security_card\x18\x03 \x01(\t\"!\n\x13UserRetrieveRequest\x12\n\n\x02id\x18\x01 \x01(\x05\x32\xa6\x05\n\x0eUserController\x12i\n\x06\x43reate\x12-.hotel_rooms_users_services.users.UserRequest\x1a..hotel_rooms_users_services.users.UserResponse\"\x00\x12Y\n\x07\x44\x65stroy\x12\x34.hotel_rooms_users_services.users.UserDestroyRequest\x1a\x16.google.protobuf.Empty\"\x00\x12o\n\x04List\x12\x31.hotel_rooms_users_services.users.UserListRequest\x1a\x32.hotel_rooms_users_services.users.UserListResponse\"\x00\x12}\n\rPartialUpdate\x12:.hotel_rooms_users_services.users.UserPartialUpdateRequest\x1a..hotel_rooms_users_services.users.UserResponse\"\x00\x12s\n\x08Retrieve\x12\x35.hotel_rooms_users_services.users.UserRetrieveRequest\x1a..hotel_rooms_users_services.users.UserResponse\"\x00\x12i\n\x06Update\x12-.hotel_rooms_users_services.users.UserRequest\x1a..hotel_rooms_users_services.users.UserResponse\"\x00\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x16users/grpc/users.proto\x12 hotel_rooms_users_services.users\x1a\x1bgoogle/protobuf/empty.proto\" \n\x12UserDestroyRequest\x12\n\n\x02id\x18\x01 \x01(\x05\"\x11\n\x0fUserListRequest\"b\n\x10UserListResponse\x12?\n\x07results\x18\x01 \x03(\x0b\x32..hotel_rooms_users_services.users.UserResponse\x12\r\n\x05\x63ount\x18\x02 \x01(\x05\"\x83\x01\n\x18UserPartialUpdateRequest\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1c\n\x14social_security_card\x18\x03 \x01(\t\x12\x1e\n\x16_partial_update_fields\x18\x04 \x03(\t\x12\x0f\n\x07\x63ontact\x18\x05 \x01(\t\"V\n\x0bUserRequest\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1c\n\x14social_security_card\x18\x03 \x01(\t\x12\x0f\n\x07\x63ontact\x18\x04 \x01(\t\"W\n\x0cUserResponse\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1c\n\x14social_security_card\x18\x03 \x01(\t\x12\x0f\n\x07\x63ontact\x18\x04 \x01(\t\"!\n\x13UserRetrieveRequest\x12\n\n\x02id\x18\x01 \x01(\x05\x32\xa6\x05\n\x0eUserController\x12i\n\x06\x43reate\x12-.hotel_rooms_users_services.users.UserRequest\x1a..hotel_rooms_users_services.users.UserResponse\"\x00\x12Y\n\x07\x44\x65stroy\x12\x34.hotel_rooms_users_services.users.UserDestroyRequest\x1a\x16.google.protobuf.Empty\"\x00\x12o\n\x04List\x12\x31.hotel_rooms_users_services.users.UserListRequest\x1a\x32.hotel_rooms_users_services.users.UserListResponse\"\x00\x12}\n\rPartialUpdate\x12:.hotel_rooms_users_services.users.UserPartialUpdateRequest\x1a..hotel_rooms_users_services.users.UserResponse\"\x00\x12s\n\x08Retrieve\x12\x35.hotel_rooms_users_services.users.UserRetrieveRequest\x1a..hotel_rooms_users_services.users.UserResponse\"\x00\x12i\n\x06Update\x12-.hotel_rooms_users_services.users.UserRequest\x1a..hotel_rooms_users_services.users.UserResponse\"\x00\x62\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -28,14 +28,14 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _globals['_USERLISTREQUEST']._serialized_end=140
   _globals['_USERLISTRESPONSE']._serialized_start=142
   _globals['_USERLISTRESPONSE']._serialized_end=240
-  _globals['_USERPARTIALUPDATEREQUEST']._serialized_start=242
-  _globals['_USERPARTIALUPDATEREQUEST']._serialized_end=356
-  _globals['_USERREQUEST']._serialized_start=358
-  _globals['_USERREQUEST']._serialized_end=427
-  _globals['_USERRESPONSE']._serialized_start=429
-  _globals['_USERRESPONSE']._serialized_end=499
-  _globals['_USERRETRIEVEREQUEST']._serialized_start=501
-  _globals['_USERRETRIEVEREQUEST']._serialized_end=534
-  _globals['_USERCONTROLLER']._serialized_start=537
-  _globals['_USERCONTROLLER']._serialized_end=1215
+  _globals['_USERPARTIALUPDATEREQUEST']._serialized_start=243
+  _globals['_USERPARTIALUPDATEREQUEST']._serialized_end=374
+  _globals['_USERREQUEST']._serialized_start=376
+  _globals['_USERREQUEST']._serialized_end=462
+  _globals['_USERRESPONSE']._serialized_start=464
+  _globals['_USERRESPONSE']._serialized_end=551
+  _globals['_USERRETRIEVEREQUEST']._serialized_start=553
+  _globals['_USERRETRIEVEREQUEST']._serialized_end=586
+  _globals['_USERCONTROLLER']._serialized_start=589
+  _globals['_USERCONTROLLER']._serialized_end=1267
 # @@protoc_insertion_point(module_scope)

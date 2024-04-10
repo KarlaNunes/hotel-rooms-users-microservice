@@ -9,6 +9,6 @@ from ..grpc.users_pb2 import (
 class UserProtoSerializer(proto_serializers.ModelProtoSerializer):
     class Meta:
         model = User
-        fields = ("id", "name", "social_security_card")
+        fields = ("id", "name", "social_security_card", "contact")
         proto_class = UserResponse
         proto_class_list = UserListResponse
