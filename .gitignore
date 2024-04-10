@@ -11,3 +11,4 @@ venv/
 htmlcov/
 coverage.xml
 .pytest_cache
+.env
