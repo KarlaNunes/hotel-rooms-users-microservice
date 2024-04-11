@@ -11,5 +11,5 @@ class CreditCard(models.Model):
         return f"Credit card: {self.number}; "
 
     class Meta:
-        verbose_name = "User"
-        verbose_name_plural = "Users"
+        verbose_name = "CreditCard"
+        verbose_name_plural = "CreditCards"
